@@ -1,17 +1,17 @@
-import React, { useEffect } from 'react';
-import { CITY } from '../components/City';
-import { useParams } from 'react-router-dom';
-import Linkcom from '../components/Linkcom';
-import { Col, Container, Row } from 'react-bootstrap';
+import React, { useEffect } from "react";
+import { CITY } from "../components/City";
+import { useParams } from "react-router-dom";
+import Linkcom from "../components/Linkcom";
+import { Col, Container, Row } from "react-bootstrap";
 
-import Footer from '../components/Footer';
-import Address from '../components/Address';
+import Footer from "../components/Footer";
+import Address from "../components/Address";
 
 const Contact = () => {
   const { city } = useParams();
-  const contactcity = CITY.find(cities => cities.scity === city);
+  const contactcity = CITY.find((cities) => cities.scity === city);
   useEffect(() => {
-    window.scrollTo(0, 0); 
+    window.scrollTo(0, 0);
   }, []);
   return (
     <>
@@ -24,23 +24,20 @@ const Contact = () => {
       </div>
       <Linkcom children={contactcity.scity} />
       <Container>
-       
-          <Row className='mb-5'>
-            <Col sm={12} md={7} style={{ height: "100%" }}>
-              <div>
-                {contactcity.iframe}
-              </div>
-            </Col>
-            <Col md={5} style={{ height: "100%" }}>
-              <img alt='city' src={contactcity.cityimg} style={{ width: "100%", height: "500px" }} />
-            </Col>
-          </Row>
-       
-          <p style={{ fontSize: "30px" }}>{contactcity.head1}</p>
-          <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para1}</p>
-          <p style={{ fontSize: "30px" }}>{contactcity.head2}</p>
-          <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para2}</p>
-       
+        <Row className="mb-5">
+          <Col md={12} lg={12} sm={12} style={{ height: "100%" }}>
+            <img
+              alt="city"
+              src={contactcity.cityimg}
+              style={{ width: "100%", height: "500px" }}
+            />
+          </Col>
+        </Row>
+
+        <p style={{ fontSize: "30px" }}>{contactcity.head1}</p>
+        <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para1}</p>
+        <p style={{ fontSize: "30px" }}>{contactcity.head2}</p>
+        <p style={{ fontSize: "15px", color: "gray" }}>{contactcity.para2}</p>
       </Container>
       <Address />
       <Footer />
