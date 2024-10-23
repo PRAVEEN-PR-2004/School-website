@@ -1,11 +1,22 @@
-.noo
-{
-    color: black;
-    font-weight: bold;
-    background-color:#ffcc00;
-    padding: 5px;
+.noo {
+  color: black;
+  font-weight: bold;
+  background-color: #ffcc00;
+  padding: 5px;
 }
-.changenav
-{
-    background-color: white;
+.changenav {
+  background-color: white;
+}
+/* Appbar.css */
+
+/* Prevent the dropdown items from changing color when active */
+.dropdown-item.active {
+  color: inherit !important; /* Maintain the text color */
+  background-color: transparent !important; /* Remove the blue background color */
+}
+
+/* Optional: If you want to remove the hover color as well */
+.dropdown-item:hover {
+  background-color: transparent !important; /* Keep the hover background transparent */
+  color: inherit !important; /* Keep the text color the same */
 }

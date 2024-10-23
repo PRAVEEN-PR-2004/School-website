@@ -51,40 +51,67 @@ function Appbar() {
               />
             </Navbar.Brand>
 
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`}  onClick={() => setShowOffcanvas(!showOffcanvas)}/>
+            <Navbar.Toggle
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+              onClick={() => setShowOffcanvas(!showOffcanvas)}
+            />
             <Navbar.Offcanvas
-            show={showOffcanvas}
-            onHide={() => setShowOffcanvas(false)}
+              show={showOffcanvas}
+              onHide={() => setShowOffcanvas(false)}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="start"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                 GT HOLIDAYS
+                  GT HOLIDAYS
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-center flex-grow-1 pe-3">
-                  <Link to="/" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link to="/" className="nav-link" onClick={closeOffcanvas}>
                     HOME
                   </Link>
-                  <Link to="/company" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/company"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     COMPANY
                   </Link>
-                  <Link to="/grouptour" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/grouptour"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     GROUP TOUR
                   </Link>
-                  <Link to="/packages" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/packages"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     PACKAGES
                   </Link>
-                  <Link to="/honeymoon" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/honeymoon"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     HONEYMOON
                   </Link>
-                  <Link to="/cruises" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/cruises"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     CRUISES
                   </Link>
-                  <Link to="/wedding" className="nav-link"  onClick={closeOffcanvas}>
+                  <Link
+                    to="/wedding"
+                    className="nav-link"
+                    onClick={closeOffcanvas}
+                  >
                     WEDDING
                   </Link>
                   <NavDropdown
@@ -93,88 +120,47 @@ function Appbar() {
                   >
                     <NavDropdown.Item
                       as={Link}
-                      to="/contact/Mumbai"
+                      to="/contact/Football"
                       className="dropdown-item"
                       onClick={closeOffcanvas}
                     >
-                      Mumbai
+                      Football
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={Link}
-                      to="/contact/Hyderabad"
+                      to="/contact/Basketball"
                       className="dropdown-item"
                       onClick={closeOffcanvas}
                     >
-                      Hyderabad
+                      Basketball
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={Link}
-                      to="/contact/Bangalore"
+                      to="/contact/Volleyball"
                       className="dropdown-item"
                       onClick={closeOffcanvas}
                     >
-                      Bangalore
+                      Volleyball
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={Link}
-                      to="/contact/Chennai"
+                      to="/contact/Kabaddi"
                       className="dropdown-item"
                       onClick={closeOffcanvas}
                     >
-                      Chennai
+                      Kabaddi
                     </NavDropdown.Item>
                     <NavDropdown.Divider />
-
                     <NavDropdown.Item
                       as={Link}
-                      to="/contact/Coimbatore"
+                      to="/contact/KhoKho"
                       className="dropdown-item"
                       onClick={closeOffcanvas}
                     >
-                      Coimbatore
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Erode"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Erode
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Madurai"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Madurai
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Trichy"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Trichy
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-
-                    <NavDropdown.Item
-                      as={Link}
-                      to="/contact/Salem"
-                      className="dropdown-item"
-                      onClick={closeOffcanvas}
-                    >
-                      Salem
+                      KhoKho
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
