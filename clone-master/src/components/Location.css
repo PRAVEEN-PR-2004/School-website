@@ -1,0 +1,60 @@
+.location-section {
+  padding: 50px 0;
+}
+
+.map-column {
+  height: 450px; /* Ensure fixed height for map */
+}
+
+.map-container {
+  height: 100%; /* Make the map container take full height */
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.location-info-card {
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  height: 100%; /* Ensure the card takes the full height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.location-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.location-icon {
+  color: #007bff;
+}
+
+.location-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.6;
+}
+
+.location-phone {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .map-column {
+    height: 300px; /* Adjust height for smaller devices */
+  }
+
+  .location-title {
+    font-size: 1.5rem;
+  }
+
+  .location-text {
+    font-size: 1rem;
+  }
+}
