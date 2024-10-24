@@ -115,7 +115,7 @@ function Appbar() {
                     WEDDING
                   </Link>
                   <NavDropdown
-                    title="CONTACT"
+                    title="SPORT"
                     id={`offcanvasNavbarDropdown-expand-${expand}`}
                   >
                     <NavDropdown.Item
@@ -161,6 +161,37 @@ function Appbar() {
                       onClick={closeOffcanvas}
                     >
                       KhoKho
+                    </NavDropdown.Item>
+                  </NavDropdown>
+                  <NavDropdown
+                    title="GROUP"
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}
+                  >
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/BioMath"
+                      className="dropdown-item"
+                      onClick={closeOffcanvas}
+                    >
+                      Bio-Math
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/Commerce"
+                      className="dropdown-item"
+                      onClick={closeOffcanvas}
+                    >
+                      Commerce
+                    </NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item
+                      as={Link}
+                      to="/ContactForGroup/ComputerScience"
+                      className="dropdown-item"
+                      onClick={closeOffcanvas}
+                    >
+                      Computer Science
                     </NavDropdown.Item>
                   </NavDropdown>
                 </Nav>
